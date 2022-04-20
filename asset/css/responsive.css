@@ -1,0 +1,39 @@
+@media (max-width: 576px) {
+  .icon-slider {
+    display: none;
+  }
+  .section__title-all {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .romance__products .col-order {
+    text-align: left;
+  }
+  .content__details .details__overview .overview__desc .overview__desc__rate {
+    text-align: left;
+  }
+}
+
+@media (max-width: 992px) {
+  .col-header__nav {
+    display: none;
+  }
+  #footer .footer__links li {
+    margin-right: 10px;
+  }
+  #content .products .romance__products.section__product {
+    margin-bottom: 0px;
+  }
+  .banner {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 993px) {
+  .mobile__nav {
+    display: none;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

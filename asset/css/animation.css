@@ -1,0 +1,29 @@
+@-webkit-keyframes example {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 25%;
+  }
+  50% {
+    top: 75%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+@keyframes example {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 25%;
+  }
+  50% {
+    top: 75%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+/*# sourceMappingURL=animation.css.map */
