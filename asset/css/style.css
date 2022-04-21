@@ -878,9 +878,11 @@ li {
 .watching__video video {
   height: 100%;
   width: 100%;
+  outline: none;
 }
 
 .blog__banner {
+  margin-top: 40px;
   position: relative;
   background-image: url("/asset/img/slider/hero-1.jpg.webp");
   height: 300px;
@@ -925,6 +927,7 @@ li {
   background-position: center;
   background-image: url("/asset/img/blog/blog-b-1.jpg.webp");
   background-size: cover;
+  margin: 0 -10px 10px;
 }
 
 .blog__content .blog__item .blog__item__desc {
@@ -948,5 +951,378 @@ li {
 
 .blog__content .blog__item .blog__item__name {
   font-size: 2.4rem;
+}
+
+.blog-details__banner {
+  color: #fff;
+  padding: 70px 0 30px;
+}
+
+.blog-details__banner img {
+  width: 100%;
+  display: block;
+}
+
+.blog-details__banner__title p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.blog-details__banner__title p span {
+  color: #b7b7b7;
+}
+
+.blog-details__banner__title h1 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.blog-details__social {
+  width: 100%;
+  margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-details__social li {
+  width: 23%;
+  display: inline-block;
+  margin: 0 5px 10px;
+}
+
+.blog-details__social li a {
+  display: block;
+  border-radius: 2px;
+  background-color: #0372b1;
+  font-size: 1.5rem;
+  padding: 15px 30px 15px 20px;
+}
+
+.blog-details__social li a i {
+  margin-right: 10px;
+}
+
+.blog-details__social li.active a {
+  background-color: #e53637;
+}
+
+.blog-details__content {
+  padding-bottom: 100px;
+  color: #fff;
+}
+
+.blog-details__content .blog-details__title {
+  font-size: 1.7rem;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.blog-details__item {
+  margin-bottom: 40px;
+}
+
+.blog-details__item .blog-details__item__name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.blog-details__item .blog-details__img {
+  margin-bottom: 26px;
+}
+
+.blog-details__item .blog-details__img img {
+  width: 100%;
+}
+
+.blog-details__item .blog-details__item__desc {
+  font-size: 1.7rem;
+  text-align: justify;
+}
+
+.blog-details__categories {
+  margin-bottom: 70px;
+}
+
+.blog-details__categories .blog-details__categories__item {
+  display: inline-block;
+}
+
+.blog-details__categories .blog-details__categories__item a {
+  padding: 6px 15px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #b7b7b7;
+  display: block;
+  margin-right: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.blog-details__direct {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 0 15px;
+  margin-bottom: 65px;
+}
+
+.blog-details__direct a {
+  display: inline-block;
+  padding: 20px 0;
+  font-size: 1.7rem;
+}
+
+.blog-details__direct a i {
+  color: #b7b7b7;
+}
+
+.blog-details__direct .blog-details__direct__next {
+  float: right;
+}
+
+.blog-details__comment {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.blog-details__comment .blog-details__comment__title {
+  font-size: 2.4rem;
+  margin-bottom: 26px;
+  font-weight: 600;
+}
+
+.blog-details__comment ul {
+  display: block;
+}
+
+.blog-details__comment .blog-details__comment__item {
+  margin-bottom: 40px;
+}
+
+.blog-details__comment .comment__item__img {
+  width: 70px;
+  height: 70px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.blog-details__comment .comment__item__time {
+  display: block;
+  font-size: 1.4rem;
+  color: #b7b7b7;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.blog-details__comment .comment__item__name {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.blog-details__comment .comment__item__text {
+  font-size: 1.4rem;
+  color: #b7b7b7;
+  margin-bottom: 25px;
+}
+
+.blog-details__comment .comment__item__interact {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 6px 20px;
+  margin-right: 14px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  letter-spacing: 0.2rem;
+}
+
+.blog-details__comment .comment__item__interact:hover {
+  background-color: #e53637;
+}
+
+.blog-details__comment .blog-details__comment__item-child {
+  margin-left: 110px;
+}
+
+.blog-details__user__comment {
+  padding-top: 50px;
+}
+
+.blog-details__user__comment .user__comment__title {
+  font-size: 2.4rem;
+  margin-bottom: 26px;
+  font-weight: 600;
+}
+
+.blog-details__user__comment .user__comment__form {
+  font-size: 1.5rem;
+}
+
+.blog-details__user__comment .user__comment__form * {
+  outline: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 2px;
+  border: none;
+}
+
+.blog-details__user__comment .user__comment__form input[type="submit"] {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #e53637;
+  padding: 12px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.account__title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-family: 'Oswald',sans-serif;
+  font-weight: 600;
+}
+
+.account {
+  padding: 0 40px;
+}
+
+.account .account__form .account__form__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.account .account__form .account__form__input i {
+  font-size: 2rem;
+  color: #ccc;
+  padding: 15px 15px;
+  position: relative;
+}
+
+.account .account__form .account__form__input i::after {
+  content: "";
+  height: 35px;
+  width: 1px;
+  background-color: #b7b7b7;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.account .account__form .account__form__input input {
+  outline: none;
+  padding: 15px 20px;
+  width: 100%;
+  border: none;
+}
+
+.account .account__form .account__form__submit {
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #fff;
+  display: block;
+  background-color: #e53637;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  border: none;
+}
+
+.account .account__form .account__form__question {
+  font-size: 1.5rem;
+  float: right;
+  line-height: 40px;
+}
+
+.account .account__form .account__form__question a {
+  color: #e53637;
+}
+
+.direct__register {
+  padding: 0 40px;
+}
+
+.direct__register a {
+  padding: 12px 42px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #fff;
+  display: block;
+  background-color: none;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  border: none;
+}
+
+.col-account {
+  border-right: 1px solid #23243f;
+}
+
+.other__account p {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: .2rem;
+}
+
+.social__account {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 30px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #fff;
+  display: block;
+  background-color: #e53637;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  border: none;
+  position: relative;
+}
+
+.social__account i {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.account__register {
+  background-color: #e53637;
+}
+
+.account__facebook {
+  background-color: #4267b2;
+}
+
+.account__twitter {
+  background-color: #1da1f2;
 }
 /*# sourceMappingURL=style.css.map */

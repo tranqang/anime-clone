@@ -5,6 +5,15 @@
   .section__title-all {
     text-align: left;
   }
+  .blog-details__direct {
+    text-align: center;
+  }
+  .blog-details__direct .blog-details__direct__next {
+    float: initial;
+  }
+  .blog-details__comment .blog-details__comment__item-child {
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -13,6 +22,12 @@
   }
   .content__details .details__overview .overview__desc .overview__desc__rate {
     text-align: left;
+  }
+  .blog-details__social li {
+    width: 45%;
+  }
+  .blog-details__banner__title h1 {
+    font-size: 3rem;
   }
 }
 
@@ -28,6 +43,9 @@
   }
   .banner {
     margin-top: 50px;
+  }
+  .col-account {
+    border-right: none;
   }
 }
 

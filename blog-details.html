@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <link rel="stylesheet" href="./asset/css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./asset/js/app.js"></script>
+</head>
+
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-2">
+                    <div class="logo">
+                        <a href="/index.html">
+                            <img src="./asset/img/logo/logo.webp" alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-header__nav">
+                    <div class="header__nav">
+                        <ul class="text-center">
+                            <li><a href="/index.html">Homepage</a></li>
+                            <li class="categories__item">
+                                <a href="/categories.html">Categories
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="sub__categories">
+                                    <li><a href="/categories.html">Categories</a></li>
+                                    <li><a href="/anime-details.html">Anime Detail</a></li>
+                                    <li><a href="/anime-watching.html">Anime Watching</a></li>
+                                    <li><a href="/blog-details.html">Blog Details</a></li>
+                                    <li><a href="/signup.html">Sign Up</a></li>
+                                    <li><a href="/login.html">Login</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="/blog.html">Our Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <div class="header__right text-right">
+                        <a href="#"> <label for="openSearchBar">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </label> </a>
+                        <input type="checkbox" id="openSearchBar" hidden>
+                        <div id="searchModel">
+                            <div class="closeSearchModel text-center">
+                                <label for="openSearchBar">
+                                    <i class="fa-solid fa-xmark"></i>
+                            </div>
+                            </label>
+
+                            <input type="text" placeholder="Search here ...">
+
+                        </div>
+                        <a href="/login.html"> <i class="fa-solid fa-user"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="mobile__nav">
+                        <div class="mobile-icon text-right">
+                            <label for="openMobileNav">
+                                MENU <i class="fa-solid fa-bars"></i>
+                            </label>
+                        </div>
+                        <input type="checkbox" id="openMobileNav" hidden>
+                        <ul class="mobile__nav-list">
+                            <li><a href="/index.html">Homepage</a></li>
+                            <li>
+                                <label for="openSubCategories" class="labelCategory">
+                                    Categories <i class="fa-solid fa-caret-right openSubCategoriesIcon"></i>
+                                </label>
+                                <input type="checkbox" id="openSubCategories" hidden>
+                                <ul class="sub__categories">
+                                    <li><a href="/categories.html">Categories</a></li>
+                                    <li><a href="/anime-details.html">Anime Detail</a></li>
+                                    <li><a href="/anime-watching.html">Anime Watching</a></li>
+                                    <li><a href="/blog-details.html">Blog Details</a></li>
+                                    <li><a href="/signup.html">Sign Up</a></li>
+                                    <li><a href="/login.html">Login</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/blog.html">Our Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <div class="blog-details__banner">
+        <div class="container">
+            <div class="blog-details__banner__title">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="text-center">ACTION, MAGIC - <span>March 08, 2020</span></p>
+                        <h1 class="text-center">Anime for Beginners: 20 Pieces of Essential Viewing</h1>
+                        <ul class="blog-details__social text-center">
+                            <li><a href="#"><i class="fa-brands fa-facebook-square"></i>Facebook</a></li>
+                            <li class="active"><a href="#"><i class="fa-brands fa-pinterest"></i>Pinterest</a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter-square"></i>Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog-details__banner__img">
+                <img src="/asset/img/blog-details/blog-details-banner.jpg" alt="banner-blog-details">
+            </div>
+        </div>
+    </div>
+
+    <div class="blog-details__content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="blog-details__title">
+                        As a result the last couple of eps haven’t been super exciting for me, because they’ve been more
+                        like settling into a familiar and comfortable routine. We’re seeing character growth here but
+                        it’s subtle (apart from Shouyou, arguably). I mean, Tobio being an asshole is nothing new – it’s
+                        kind of the foundation of his entire character arc. Confronting whether his being an asshole is
+                        a problem for the Crows this directly is a bit of an evolution, and probably an overdue one at
+                        that, but the overall dynamic with Kageyama is basically unchanged.
+                    </p>
+                    <ul>
+                        <li class="blog-details__item">
+                            <h3 class="blog-details__item__name">Tobio-Nishinoya showdown:</h3>
+                            <div class="blog-details__img"><img src="/asset/img/blog-details/blog-details-1.jpg" alt="">
+                            </div>
+                            <p class="blog-details__item__desc">In Japan the idea of a first-year speaking to a senior
+                                the way Kageyama did to Asahi is a lot more shocking than it would be in the West, but
+                                Tobio calling out teammates in genuinely rude fashion in the middle of a match is what
+                                got him isolated in the first place. It’s better for the Crows to sort this out in
+                                practice matches than the real deal, but this is really on Tobio – he has to figure out
+                                how to co-exist with others in a team environment.</p>
+                        </li>
+                        <li class="blog-details__item">
+                            <h3 class="blog-details__item__name">Nanatsu no Taizai: Kamigami No Gekirin</h3>
+                            <div class="blog-details__img"><img src="/asset/img/blog-details/blog-details-2.jpg" alt="">
+                            </div>
+                            <p class="blog-details__item__desc">In Japan the idea of a first-year speaking to a senior
+                                the way Kageyama did to Asahi is a lot more shocking than it would be in the West, but
+                                Tobio calling out teammates in genuinely rude fashion in the middle of a match is what
+                                got him isolated in the first place. It’s better for the Crows to sort this out in
+                                practice matches than the real deal, but this is really on Tobio – he has to figure out
+                                how to co-exist with others in a team environment.</p>
+                        </li>
+                        <li class="blog-details__item">
+                            <h3 class="blog-details__item__name">ID:Ianvaded:</h3>
+                            <div class="blog-details__img"><img src="/asset/img/blog-details/blog-details-3.jpg" alt="">
+                            </div>
+                            <p class="blog-details__item__desc">In Japan the idea of a first-year speaking to a senior
+                                the way Kageyama did to Asahi is a lot more shocking than it would be in the West, but
+                                Tobio calling out teammates in genuinely rude fashion in the middle of a match is what
+                                got him isolated in the first place. It’s better for the Crows to sort this out in
+                                practice matches than the real deal, but this is really on Tobio – he has to figure out
+                                how to co-exist with others in a team environment.</p>
+                        </li>
+
+                    </ul>
+                    <div class="blog-details__categories">
+                        <ul>
+                            <li class="blog-details__categories__item"><a href="#">Healthfood</a></li>
+                            <li class="blog-details__categories__item"><a href="#">Sport</a></li>
+                            <li class="blog-details__categories__item"><a href="#">Game</a></li>
+                        </ul>
+                    </div>
+                    <div class="blog-details__direct">
+                        <a class="blog-details__direct__prev">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            Building a Better LiA...
+                        </a>
+                        <a class="blog-details__direct__next">
+                            Mugen no Juunin: Immortal – 21
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="blog-details__comment">
+                        <h2 class="blog-details__comment__title">3 Comments</h2>
+                        <ul>
+                            <li class="blog-details__comment__item d-flex">
+                                <div class="comment__item__img">
+                                    <img src="/asset/img/blog-details/details-comment-1.webp" alt="">
+                                </div>
+                                <div class="comment__item__desc">
+                                    <span class="comment__item__time">Sep 08, 2020</span>
+                                    <h3 class="comment__item__name">John Smith</h3>
+                                    <p class="comment__item__text">Neque porro quisquam est, qui dolorem ipsum quia
+                                        dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>
+                                    <a class="comment__item__interact" href="#">Like</a>
+                                    <a class="comment__item__interact" href="#">Reply</a>
+                                </div>
+                            </li>
+                            <li class="blog-details__comment__item d-flex blog-details__comment__item-child">
+                                <div class="comment__item__img">
+                                    <img src="/asset/img/blog-details/details-comment-2.webp" alt="">
+                                </div>
+                                <div class="comment__item__desc">
+                                    <span class="comment__item__time">Sep 08, 2020</span>
+                                    <h3 class="comment__item__name">Elizabeth Perry</h3>
+                                    <p class="comment__item__text">Neque porro quisquam est, qui dolorem ipsum quia
+                                        dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>
+                                    <a class="comment__item__interact" href="#">Like</a>
+                                    <a class="comment__item__interact" href="#">Reply</a>
+                                </div>
+                            </li>
+                            <li class="blog-details__comment__item d-flex">
+                                <div class="comment__item__img">
+                                    <img src="/asset/img/blog-details/details-comment-3.webp" alt="">
+                                </div>
+                                <div class="comment__item__desc">
+                                    <span class="comment__item__time">Sep 08, 2020</span>
+                                    <h3 class="comment__item__name">Adrian Coleman</h3>
+                                    <p class="comment__item__text">Neque porro quisquam est, qui dolorem ipsum quia
+                                        dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi</p>
+                                    <a class="comment__item__interact" href="#">Like</a>
+                                    <a class="comment__item__interact" href="#">Reply</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="blog-details__user__comment">
+                        <h3 class="user__comment__title">Leave A Comment</h3>
+                        <form action="#" class="user__comment__form row">
+                                <div class="col-sm-6"> <input class="user__comment__name" type="text" placeholder="Name"></div>
+                                <div class="col-sm-6"><input class="user__comment__email" type="email" placeholder="Email"></div>
+                                <div class="col-lg-12">
+                                    <textarea class="user__comment__message" rows="4" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <input type="submit" value="Send message">
+                                </div>
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer__logo mb-4 text-center">
+                        <a href="/index.html">
+                            <img src="./asset/img/logo/logo.webp" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="footer__links text-center mb-4">
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Our Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <p class="footer__copyright text-center">
+                        Copyright ©2022 All rights reserved | This template is made with love by Colorlib | Clone by
+                        Thieu
+                    </p>
+                </div>
+            </div>
+            <div id="scrollToTop">
+                <a href="#">
+                    <i class="fa-solid fa-angle-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

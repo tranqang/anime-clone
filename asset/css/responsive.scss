@@ -5,17 +5,30 @@
   .section__title-all {
     text-align: left;
   }
- 
-}
-@media (max-width: 768px) {
-  
-    .romance__products .col-order{
-        text-align: left;
-    }
-    .content__details .details__overview .overview__desc .overview__desc__rate{
-        text-align: left;
+  .blog-details__direct {
+    text-align: center;
+    .blog-details__direct__next {
+      float: initial;
     }
   }
+  .blog-details__comment .blog-details__comment__item-child {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .romance__products .col-order {
+    text-align: left;
+  }
+  .content__details .details__overview .overview__desc .overview__desc__rate {
+    text-align: left;
+  }
+  .blog-details__social li {
+    width: 45%;
+  }
+  .blog-details__banner__title h1 {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 992px) {
   .col-header__nav {
     display: none;
@@ -33,11 +46,12 @@
   .banner {
     margin-top: 50px;
   }
+  .col-account{
+    border-right:none;
+}
 }
 @media (min-width: 993px) {
   .mobile__nav {
     display: none;
   }
 }
-
-
