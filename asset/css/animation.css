@@ -1,29 +1,17 @@
-@-webkit-keyframes example {
+@-webkit-keyframes fade {
   0% {
-    top: 0;
-  }
-  25% {
-    top: 25%;
-  }
-  50% {
-    top: 75%;
+    opacity: 0;
   }
   100% {
-    top: 100%;
+    opacity: 1;
   }
 }
-@keyframes example {
+@keyframes fade {
   0% {
-    top: 0;
-  }
-  25% {
-    top: 25%;
-  }
-  50% {
-    top: 75%;
+    opacity: 0;
   }
   100% {
-    top: 100%;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=animation.css.map */

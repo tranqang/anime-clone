@@ -23,13 +23,12 @@ $primaryColor: #e53637;
   $color: $textColor,
   $bgColor: $primaryColor
 ) {
-    
   @include linkStyle($paddingTB, $paddingLR, $fontWeight, $fontSize, $color);
   background-color: $bgColor;
   display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border: none;
 }
 * {
   margin: 0;
@@ -37,6 +36,7 @@ $primaryColor: #e53637;
   box-sizing: border-box;
 }
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 body {
@@ -84,6 +84,7 @@ li {
     .categories__item {
       position: relative;
       ul {
+        transition: all 0.3s;
         top: 120%;
         opacity: 0;
         visibility: hidden;
@@ -97,6 +98,9 @@ li {
         position: absolute;
         a {
           @include linkStyle(5px, 20px, 500, 1.4rem, #111);
+          &:hover {
+            color: $primaryColor;
+          }
         }
       }
       &:hover ul {
@@ -178,6 +182,7 @@ li {
     background-color: #4c4c4c;
     padding: 5px;
     .mobile__nav-list {
+      transition: all 0.2s;
       height: 0;
       overflow: hidden;
       margin-left: 20px;
@@ -214,6 +219,15 @@ li {
     }
   }
 }
+.carousel-item {
+  transition: all 1s;
+}
+#slider #carouselExampleIndicators .icon-slider {
+  transition: all 0.5s;
+  &:hover {
+    background-color: $primaryColor;
+  }
+}
 #slider {
   padding-top: 50px;
   #carouselExampleIndicators {
@@ -237,30 +251,40 @@ li {
           background-position: bottom center;
         }
       }
-      .slider__desc {
+      .watch__btn {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.25s;
+        transition-delay: 0.1s;
         position: absolute;
-        bottom: 50%;
-        padding: 60px 50px;
+        bottom: 90px;
+        left: 50px;
+        @include linkStyle(14px, 20px, 600, 1.4rem, $textColor);
+        background-color: $primaryColor;
+        border-radius: 4px;
+        text-transform: uppercase;
+        display: inline-block;
+        letter-spacing: 0.2rem;
+      }
+      .slider__desc {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.25s;
+        position: absolute;
+        bottom: 120px;
+        padding: 10px 50px;
         color: $textColor;
-        strong a {
-          @include linkStyle(14px, 20px, 600, 1.4rem, $textColor);
-          background-color: $primaryColor;
-          border-radius: 4px;
-          text-transform: uppercase;
-          display: inline-block;
-          letter-spacing: 0.2rem;
-        }
+
         span {
           background-color: $textColor;
           @include linkStyle(5px, 12px, 500, 1.4rem, $primaryColor);
           display: inline-block;
         }
         p {
-          margin-bottom: 40px;
           font-size: 1.6rem;
         }
         h1 {
-          margin: 35px 0 8px;
+          margin: 25px 0 8px;
           font-size: 4.2rem;
           font-weight: 500;
           font-family: "Oswald", sans-serif;
@@ -756,12 +780,17 @@ li {
   .watching__episode__item {
     display: inline-block;
     a {
+      transition: all 0.2s;
       display: block;
       font-size: 15px;
       padding: 10px 20px;
       margin: 0 15px 20px 0;
       border-radius: 4px;
       background-color: rgba(255, 255, 255, 0.2);
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
     }
   }
 }
@@ -786,6 +815,7 @@ li {
   color: $textColor;
   .blog__banner__title {
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -869,7 +899,7 @@ li {
   li {
     width: 23%;
     display: inline-block;
-    margin: 0 5px 10px;
+    margin: 0 5px 20px;
     a {
       display: block;
       i {
@@ -1024,94 +1054,95 @@ li {
     }
   }
 }
-.account__title{
-    font-size: 3rem;
-    margin-bottom: 30px;
-    font-family: 'Oswald',sans-serif;
-    font-weight: 600;
+.account__title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
 }
-.account{
-    padding: 0 40px;
-    .account__form{
-        .account__form__input{
-            display: flex;
-            align-items: center;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            background-color: #fff;
-            i{
-                font-size: 2rem;
-                color: #ccc;
-                padding: 15px 15px;
-                position: relative;
-                &::after{
-                    content: "";
-                    height: 35px;
-                    width: 1px;
-                    background-color: #b7b7b7;
-                    position: absolute;
-                    right: 0;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-            input{
-                outline: none;
-                padding: 15px 20px;
-                width: 100%;
-                border: none;
-            }
+.section__account {
+  padding: 0 40px;
+}
+.account {
+  .account__form {
+    .account__form__input {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      background-color: #fff;
+      i {
+        font-size: 2rem;
+        color: #ccc;
+        padding: 15px 15px;
+        position: relative;
+        &::after {
+          content: "";
+          height: 35px;
+          width: 1px;
+          background-color: #b7b7b7;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
         }
-        .account__form__submit{
-            @include buttonStyle(12px, 30px, 600, 1.3rem, $textColor,$primaryColor);
-        }
-        .account__form__question{
-            font-size: 1.5rem;
-            float: right;
-            line-height: 40px;
-            a{
-                color: $primaryColor;
-            }
-        }
+      }
+      input {
+        outline: none;
+        padding: 15px 20px;
+        width: 100%;
+        border: none;
+      }
     }
-}
-.direct__register{
-    padding: 0 40px;
-
-    a{
-        @include buttonStyle(12px, 42px, 600, 1.3rem, $textColor,none);
+    .account__form__submit {
+      @include buttonStyle(12px, 30px, 600, 1.3rem, $textColor, $primaryColor);
+      margin-bottom: 15px;
     }
-}
-.col-account{
-    border-right: 1px solid #23243f;
-}
-.other__account{
-    p{
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        font-weight: 600;
-        letter-spacing: .2rem;
+    .account__form__question {
+      font-size: 1.5rem;
+      float: right;
+      line-height: 40px;
+      a {
+        color: $primaryColor;
+      }
     }
+  }
 }
-.social__account{
-    width: 100%;
+.direct__register {
+  a {
+    @include buttonStyle(12px, 42px, 600, 1.3rem, $textColor, none);
+  }
+}
+.col-account {
+  border-right: 1px solid #23243f;
+}
+.other__account {
+  p {
+    font-size: 1.3rem;
+    text-transform: uppercase;
     margin-bottom: 20px;
-    @include buttonStyle(12px, 30px, 600, 1.3rem, $textColor,$primaryColor);
-    position: relative;
-    i{
-        position: absolute;
-        left: 50px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+  }
 }
-.account__register{
-    background-color: $primaryColor;
+.social__account {
+  width: 100%;
+  margin-bottom: 20px;
+  @include buttonStyle(12px, 30px, 600, 1.3rem, $textColor, $primaryColor);
+  position: relative;
+  i {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
-.account__facebook{
-    background-color: #4267b2;
+.account__register {
+  background-color: $primaryColor;
 }
-.account__twitter{
-    background-color: #1da1f2;
+.account__facebook {
+  background-color: #4267b2;
+}
+.account__twitter {
+  background-color: #1da1f2;
 }

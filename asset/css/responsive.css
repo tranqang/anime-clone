@@ -2,6 +2,15 @@
   .icon-slider {
     display: none;
   }
+  #slider #carouselExampleIndicators .carousel-inner .slider__desc h1 {
+    font-size: 3.2rem;
+  }
+  #slider #carouselExampleIndicators .carousel-inner .slider__desc {
+    padding: 15px;
+  }
+  #slider #carouselExampleIndicators .carousel-inner .watch__btn {
+    left: 15px;
+  }
   .section__title-all {
     text-align: left;
   }
@@ -13,6 +22,12 @@
   }
   .blog-details__comment .blog-details__comment__item-child {
     margin-left: 0px;
+  }
+  .section__account {
+    padding: 0;
+  }
+  .account__form__question {
+    width: 100%;
   }
 }
 

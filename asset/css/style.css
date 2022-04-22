@@ -8,6 +8,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
@@ -68,6 +69,8 @@ li {
 }
 
 #header .header__nav .categories__item ul {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   top: 120%;
   opacity: 0;
   visibility: hidden;
@@ -88,6 +91,10 @@ li {
   font-size: 1.4rem;
   color: #111;
   display: block;
+}
+
+#header .header__nav .categories__item ul a:hover {
+  color: #e53637;
 }
 
 #header .header__nav .categories__item:hover ul {
@@ -182,6 +189,8 @@ li {
 }
 
 #header .mobile__nav .mobile__nav-list {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   height: 0;
   overflow: hidden;
   margin-left: 20px;
@@ -233,6 +242,20 @@ li {
   height: max-content;
 }
 
+.carousel-item {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#slider #carouselExampleIndicators .icon-slider {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#slider #carouselExampleIndicators .icon-slider:hover {
+  background-color: #e53637;
+}
+
 #slider {
   padding-top: 50px;
 }
@@ -260,14 +283,16 @@ li {
   background-position: bottom center;
 }
 
-#slider #carouselExampleIndicators .carousel-inner .slider__desc {
+#slider #carouselExampleIndicators .carousel-inner .watch__btn {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
   position: absolute;
-  bottom: 50%;
-  padding: 60px 50px;
-  color: #fff;
-}
-
-#slider #carouselExampleIndicators .carousel-inner .slider__desc strong a {
+  bottom: 90px;
+  left: 50px;
   padding: 14px 20px;
   font-weight: 600;
   font-size: 1.4rem;
@@ -278,6 +303,17 @@ li {
   text-transform: uppercase;
   display: inline-block;
   letter-spacing: 0.2rem;
+}
+
+#slider #carouselExampleIndicators .carousel-inner .slider__desc {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  position: absolute;
+  bottom: 120px;
+  padding: 10px 50px;
+  color: #fff;
 }
 
 #slider #carouselExampleIndicators .carousel-inner .slider__desc span {
@@ -291,12 +327,11 @@ li {
 }
 
 #slider #carouselExampleIndicators .carousel-inner .slider__desc p {
-  margin-bottom: 40px;
   font-size: 1.6rem;
 }
 
 #slider #carouselExampleIndicators .carousel-inner .slider__desc h1 {
-  margin: 35px 0 8px;
+  margin: 25px 0 8px;
   font-size: 4.2rem;
   font-weight: 500;
   font-family: "Oswald", sans-serif;
@@ -862,12 +897,19 @@ li {
 }
 
 .watching__episode .watching__episode__item a {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   display: block;
   font-size: 15px;
   padding: 10px 20px;
   margin: 0 15px 20px 0;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.watching__episode .watching__episode__item a:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .watching__video {
@@ -894,6 +936,7 @@ li {
 
 .blog__banner .blog__banner__title {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -994,7 +1037,7 @@ li {
 .blog-details__social li {
   width: 23%;
   display: inline-block;
-  margin: 0 5px 10px;
+  margin: 0 5px 20px;
 }
 
 .blog-details__social li a {
@@ -1192,11 +1235,11 @@ li {
 .account__title {
   font-size: 3rem;
   margin-bottom: 30px;
-  font-family: 'Oswald',sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 600;
 }
 
-.account {
+.section__account {
   padding: 0 40px;
 }
 
@@ -1247,8 +1290,9 @@ li {
   background-color: #e53637;
   display: inline-block;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   border: none;
+  margin-bottom: 15px;
 }
 
 .account .account__form .account__form__question {
@@ -1261,10 +1305,6 @@ li {
   color: #e53637;
 }
 
-.direct__register {
-  padding: 0 40px;
-}
-
 .direct__register a {
   padding: 12px 42px;
   font-weight: 600;
@@ -1274,7 +1314,7 @@ li {
   background-color: none;
   display: inline-block;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   border: none;
 }
 
@@ -1287,7 +1327,7 @@ li {
   text-transform: uppercase;
   margin-bottom: 20px;
   font-weight: 600;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 
 .social__account {
@@ -1301,7 +1341,7 @@ li {
   background-color: #e53637;
   display: inline-block;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   border: none;
   position: relative;
 }
