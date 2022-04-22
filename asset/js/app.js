@@ -96,7 +96,7 @@ $(document).ready(function () {
   };
 
   function sectionUrlImage(sectionName, number, format) {
-    return `/asset/img/${sectionName}/${sectionName}-${number}.${format}`;
+    return `./asset/img/${sectionName}/${sectionName}-${number}.${format}`;
   }
   function setProduct(sectionName, countItem, format) {
     $(`.${sectionName}__products .section__title`).text(
@@ -204,7 +204,7 @@ $(document).ready(function () {
     for (let i = 0; i < reviewCommentData.length; i++) {
       $(".deltails__review .review__item__img img")
         .eq(i)
-        .prop("src", `/asset/img/review/review-${i + 1}.webp`);
+        .prop("src", `./asset/img/review/review-${i + 1}.webp`);
       $(".deltails__review .item__info__name")
         .eq(i)
         .text(reviewCommentData[i].name);
@@ -269,7 +269,7 @@ $(document).ready(function () {
         .children(".blog__item")
         .css({
           "background-image":
-            "url(" + `/asset/img/blog/blog-s-${i + 1}.jpg.webp` + ")",
+            "url(" + `./asset/img/blog/blog-s-${i + 1}.jpg.webp` + ")",
           height: "285px",
         });
       $(".blog__content .col-sm-6.col-blog__item")
@@ -283,7 +283,7 @@ $(document).ready(function () {
         .children(".blog__item")
         .css(
           "background-image",
-          "url(" + `/asset/img/blog/blog-b-${i + 1}.jpg.webp` + ")"
+          "url(" + `./asset/img/blog/blog-b-${i + 1}.jpg.webp` + ")"
         );
     }
   }

@@ -527,7 +527,7 @@ li {
   border-radius: 4px;
   margin-bottom: 20px;
   height: 190px;
-  background-image: url("/asset/img/top-views/top-views-1.jpg.webp");
+  background-image: url("../img/top-views/top-views-1.jpg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -727,7 +727,7 @@ li {
 }
 
 .content__details .details__overview .overview__img {
-  background-image: url("/asset/img/details/details-pic.jpg.webp");
+  background-image: url("../img/details/details-pic.jpg.webp");
   height: 440px;
   border-radius: 4px;
   background-position: center;
@@ -926,7 +926,7 @@ li {
 .blog__banner {
   margin-top: 40px;
   position: relative;
-  background-image: url("/asset/img/slider/hero-1.jpg.webp");
+  background-image: url("../img/slider/hero-1.jpg.webp");
   height: 300px;
   background-position: top center;
   background-repeat: no-repeat;
@@ -968,7 +968,7 @@ li {
   height: 580px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("/asset/img/blog/blog-b-1.jpg.webp");
+  background-image: url("../img/blog/blog-b-1.jpg.webp");
   background-size: cover;
   margin: 0 -10px 10px;
 }
